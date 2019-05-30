@@ -1,2 +1,3 @@
 # Ignoring certain files so I can easily add to git
 .DS_Store
+*.swp
