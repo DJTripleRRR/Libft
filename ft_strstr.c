@@ -6,9 +6,11 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 15:37:25 by rysmith           #+#    #+#             */
-/*   Updated: 2019/06/12 16:07:21 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/06/12 16:12:12 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 char	*ft_strstr(const char *haystack, const char *needle)
 {
