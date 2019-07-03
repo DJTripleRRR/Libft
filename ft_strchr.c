@@ -6,7 +6,7 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 15:22:57 by rysmith           #+#    #+#             */
-/*   Updated: 2019/06/12 15:35:41 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/07/03 13:59:41 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,5 @@ char	*ft_strchr(const char *s, int c)
 		}
 		i++;
 	}
-	if (check = '\0')
-	{
-		return ((char*)s + i);
-	}
-	return (NULL)
+	return (NULL);
 }

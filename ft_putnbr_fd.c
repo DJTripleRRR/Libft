@@ -1,30 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/12 15:32:05 by rysmith           #+#    #+#             */
-/*   Updated: 2019/07/03 14:04:29 by rysmith          ###   ########.fr       */
+/*   Created: 2019/07/03 14:28:28 by rysmith           #+#    #+#             */
+/*   Updated: 2019/07/03 14:30:43 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <string.h>
+#include <unistd.h>
 
-char	*ft_strrchr(const char *s, int c)
+void	ft_putnbr_fd(int n, int fd)
 {
-	int		i;
-	char	fndchr;
-
-	i = ft_strlen(s);
-	fndchr = (char)c;
-	while (i >= 0)
-	{
-		if (s[i] == fndchr)
-			return ((char*)s + i);
-		i--;
-	}
-	return (NULL);
+	write(fd, &n, 1);
 }
