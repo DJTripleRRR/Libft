@@ -6,13 +6,12 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/27 14:48:13 by rysmith           #+#    #+#             */
-/*   Updated: 2019/07/03 13:13:39 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/07/15 15:47:59 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <libft.h>
-#include <libft.h>
+#include "libft.h"
 
 char	**ft_strsplit(char const *s, char c)
 {

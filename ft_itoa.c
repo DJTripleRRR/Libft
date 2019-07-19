@@ -6,11 +6,12 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/03 13:16:08 by rysmith           #+#    #+#             */
-/*   Updated: 2019/07/03 13:21:14 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/07/15 14:43:11 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 
 static size_t	ft_itoa_len(int n)
 {

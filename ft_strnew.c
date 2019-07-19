@@ -6,7 +6,7 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/27 12:06:56 by rysmith           #+#    #+#             */
-/*   Updated: 2019/06/27 12:19:23 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/07/15 14:31:22 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnew(size_t size)
 	int		i;
 
 	i = 0;
-	mem = (char *)memalloc(size * sizeof(char));
+	mem = (char *)malloc(size * sizeof(char));
 	if (mem == NULL)
 	{
 		return (NULL);

@@ -6,14 +6,15 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 11:50:43 by rysmith           #+#    #+#             */
-/*   Updated: 2019/05/21 11:52:10 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/07/15 14:58:40 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strlen(char *str)
 {
-	int counter;
+	int count;
 
+	count = 0;
 	while (str[count] != '\0')
 	{
 		count++;

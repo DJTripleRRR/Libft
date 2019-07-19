@@ -6,11 +6,11 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 14:42:43 by rysmith           #+#    #+#             */
-/*   Updated: 2019/06/12 14:46:00 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/07/15 14:37:36 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 #include <string.h>
 
 char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n)

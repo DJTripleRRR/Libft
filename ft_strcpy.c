@@ -6,7 +6,7 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 14:19:13 by rysmith           #+#    #+#             */
-/*   Updated: 2019/06/12 14:19:51 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/07/15 14:38:42 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,5 @@ char	*ft_strcpy(char *dst, const char *src)
 		i++;
 	}
 	dst[i] = src[i];
+	return (dst);
 }
