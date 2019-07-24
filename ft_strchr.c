@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int		i;
+	int	i;
 	char	fndchr;
 
 	i = 0;
@@ -22,10 +22,10 @@ char	*ft_strchr(const char *s, int c)
 	while (s[i] != '\0')
 	{
 		if (s[i] == fndchr)
-		{
 			return ((char*)s + i);
-		}
 		i++;
 	}
+	if (fndchr == '\0')
+		return ((char*)s + i);
 	return (NULL);
 }

@@ -12,18 +12,26 @@
 
 #include <string.h>
 
-void	*ft_memccpy(void *str1, const void *str2, int c, size_t n)
+void	*ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n)
 {
-	size_t	i;
+	size_t		i;
+	unsigned char	*fdst;
+	unsigned char	*fsrc;
+	unsigned char	fc;
 
+	fdst = (unsigned char*)dst;
+	fsrc = (unsigned char*)src;
+	fc = c;
 	i = 0;
 	if (n == 0)
+		return (dst);
+	if (fdst == NULL && fsrc == NULL)
 		return (NULL);
-	while (n > 0 || (((unsigned char *)str2)[i] != (unsigned char)c))
+	while (i < n)
 	{
-		((char *)str1)[i] = ((char *)str2)[i];
+		fdst[i] = fsrc[i];
+		if (fsrc[i] == fc)
+			return ((void*)dst + i + 1);
 		i++;
-		n--;
 	}
-	return (str1);
 }

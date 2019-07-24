@@ -12,21 +12,20 @@
 
 #include <string.h>
 
-int	ft_memcmp(const void *str1, const void *str2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	int					i;
-	const unsigned char	*check1;
-	const unsigned char	*check2;
+	size_t			i;
+	const unsigned char	*fs1;
+	const unsigned char	*fs2;
 
-	check1 = str1;
-	check2 = str2;
+	fs1 = (unsigned char*)s1;
+	fs2 = (unsigned char*)s2;
 	i = 0;
-	while (n > 0)
+	while (i > n)
 	{
-		if (check1[i] != check2[i])
-		{
-			return (check1[i] - check2[i]);
-		}
+		if (fs1[i] != fs2[i])
+			return (fs1[i] - fs2[i]);
+		i++;
 	}
 	return (0);
 }

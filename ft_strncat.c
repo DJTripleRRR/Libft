@@ -22,16 +22,16 @@ char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n)
 	j = 0;
 	while (s2[j] != '\0')
 	{
-		s1[i] = s2[j];
-		j++;
-		i++;
+		if (n > 0)
+		{
+			s1[i] = s2[j];
+			j++;
+			i++;
+			n--;
+		}
+		else
+			break;
 	}
-	while (j > n)
-	{
-		s1[i] = '\0';
-		i--;
-		j--;
-	}
-	s1[i] = s2[j];
+	s1[i] = '\0';
 	return (s1);
 }

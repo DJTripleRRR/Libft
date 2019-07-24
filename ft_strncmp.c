@@ -21,6 +21,8 @@ int	ft_strncmp(char *s1, char *s2, size_t n)
 	{
 		return (0);
 	}
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
 	while (s1[ct] == s2[ct] && s1[ct] != '\0' && s2[ct] != '\0' && n > 0)
 	{
 		ct++;
