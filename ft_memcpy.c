@@ -24,6 +24,6 @@ void	*ft_memcpy(void *str1, const void *str2, size_t n)
 		((unsigned char *)str1)[i] = ((unsigned char *)str2)[i];
 		i++;
 	}
-	str[i] = '\0';
+	((unsigned char *)str1)[i] = '\0';
 	return (str1);
 }
