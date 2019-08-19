@@ -6,25 +6,18 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 12:33:25 by rysmith           #+#    #+#             */
-/*   Updated: 2019/05/21 12:37:36 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/08/19 17:05:37 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_strequ(char const *s1, char const *s2)
 {
-	int counter;
-	int isequal;
-
-	counter = 0;
-	isequal = 0;
-	while (s1[counter] != '\0' && s2[counter] != '\0')
-	{
-		isequal = 0;
-		while (s1[counter] == s2[counter])
-		{
-			isequal = 1;
-		}
-		counter++;
-	}
-	return (isequal);
+	if (s1 == NULL || s2 == NULL)
+		return (0);
+	if (ft_strcmp(s1, s2) == 0)
+		return (1);
+	else
+		return (0);
 }

@@ -6,28 +6,18 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/27 12:06:56 by rysmith           #+#    #+#             */
-/*   Updated: 2019/07/15 14:31:22 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/08/19 17:04:02 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strnew(size_t size)
 {
 	char	*mem;
-	int		i;
 
-	i = 0;
-	mem = (char *)malloc(size * sizeof(char));
-	if (mem == NULL)
-	{
+	if (!(mem = (char*)malloc(sizeof(char) * (size + 1))))
 		return (NULL);
-	}
-	while (size > 0)
-	{
-		((char *)mem)[i] = '\0';
-		i++;
-		size--;
-	}
+	ft_bzero(mem, (size + 1));
 	return (mem);
 }

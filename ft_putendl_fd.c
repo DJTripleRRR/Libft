@@ -6,7 +6,7 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 14:12:54 by rysmith           #+#    #+#             */
-/*   Updated: 2019/07/03 14:27:33 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/08/19 17:19:27 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,6 @@
 
 void	ft_putendl_fd(char const *s, int fd)
 {
-	int index;
-
-	index = 0;
-	while (s[index] != '\0')
-	{
-		ft_putchar_fd(s[index], fd);
-		index++;
-	}
-	ft_putchar('\0');
-	ft_putchar('\n');
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }

@@ -6,30 +6,28 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/27 13:14:06 by rysmith           #+#    #+#             */
-/*   Updated: 2019/07/15 15:00:30 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/08/19 17:08:20 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	char	*mem;
 	size_t	i;
+	char	*mem;
 
 	i = 0;
-	if (!(s && start && len))
+	if (s == NULL)
 		return (NULL);
-	if ((!(mem = (char*)sizeof(len))) || (start > ft_strlen(s - 1)))
+	if ((!(mem = ft_strnew(len))) || (start > (ft_strlen(s) - 1)))
 		return (NULL);
-	while (i <= len || s[i] != '\0')
+	while (i < len && s[start] != '\0')
 	{
 		mem[i] = s[start];
-		i++;
 		start++;
+		i++;
 	}
-	if (s[start] == '\0')
-		mem[i] = s[start];
+	mem[i] = '\0';
 	return (mem);
 }
