@@ -6,7 +6,7 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 17:13:45 by rysmith           #+#    #+#             */
-/*   Updated: 2019/08/19 15:49:52 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/08/19 16:43:39 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		while (i > 0)
 		{
 			fdst[i] = fsrc[i];
-			i++;
+			i--;
 		}
 	}
 	else

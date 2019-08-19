@@ -6,7 +6,7 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:27:38 by rysmith           #+#    #+#             */
-/*   Updated: 2019/08/19 12:36:52 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/08/19 16:50:25 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,10 @@
 
 int	ft_strncmp(char *s1, char *s2, size_t n)
 {
-	int ct;
+	size_t len;
 
-	ct = 0;
-	if (n == 0)
-	{
-		return (0);
-	}
-	if (s1 == NULL || s2 == NULL)
-		return (0);
-	while (s1[ct] == s2[ct] && s1[ct] != '\0' && s2[ct] != '\0' && n > 0)
-	{
-		ct++;
-		n--;
-	}
-	return (s1[ct] - s2[ct]);
+	len = n;
+	if (ft_strlen(s1) < n)
+		len = ft_strlen(s1) + 1;
+	return (ft_memcmp(s1, s2, len));
 }

@@ -6,7 +6,7 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 16:10:58 by rysmith           #+#    #+#             */
-/*   Updated: 2019/08/19 15:54:31 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/08/19 16:46:48 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 			{
 				if (i + j > len)
 					break ;
-				if (needle[j + i] == '\0')
+				if (needle[j + 1] == '\0')
 					return ((char *)haystack + i);
 				j++;
 			}
