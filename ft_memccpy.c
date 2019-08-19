@@ -6,7 +6,7 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 17:05:51 by rysmith           #+#    #+#             */
-/*   Updated: 2019/07/03 13:46:52 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/08/19 12:30:28 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,5 @@ void	*ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n)
 			return ((void*)dst + i + 1);
 		i++;
 	}
+	return (NULL);
 }

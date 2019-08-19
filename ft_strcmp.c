@@ -6,7 +6,7 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 11:52:46 by rysmith           #+#    #+#             */
-/*   Updated: 2019/05/21 12:02:14 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/08/19 12:36:23 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ int	ft_strcmp(char *s1, char *s2)
 
 	i = 0;
 	if (s1 == NULL || s2 == NULL)
-		return (NULL);
-	while (s1[ct] == s2[ct] && s1[ct] != '\0' && s2[ct] != '\0')
-		ct++;
-	return (s1[ct] - s2[ct]);
+		return (0);
+	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
+		i++;
+	return (s1[i] - s2[i]);
 }
