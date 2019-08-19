@@ -6,7 +6,7 @@
 #    By: rysmith <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/07/03 13:22:43 by rysmith           #+#    #+#              #
-#    Updated: 2019/07/15 14:08:37 by rysmith          ###   ########.fr        #
+#    Updated: 2019/08/19 17:27:54 by rysmith          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,6 @@ SRC = ft_memalloc.c \
   	  ft_striter.c \
   	  ft_strnstr.c \
 	  ft_memchr.c \
-  	  ft_putnmb_fd.c \
   	  ft_striteri.c \
   	  ft_strrchr.c \
 	  ft_atoi.c \
