@@ -6,7 +6,7 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 17:13:45 by rysmith           #+#    #+#             */
-/*   Updated: 2019/05/29 17:18:21 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/08/19 15:49:52 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*fsrc;
 	unsigned char	*fdst;
 

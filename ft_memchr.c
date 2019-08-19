@@ -6,7 +6,7 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 17:21:07 by rysmith           #+#    #+#             */
-/*   Updated: 2019/05/29 17:31:35 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/08/19 15:50:36 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*fs;
 	unsigned char	fc;
 

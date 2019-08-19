@@ -6,14 +6,14 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 16:30:09 by rysmith           #+#    #+#             */
-/*   Updated: 2019/06/12 16:58:33 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/08/19 15:56:25 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_atoi(const char *str)
 {
 	long int	i;
-	int		plusminus;
+	int			plusminus;
 	long int	result;
 
 	i = 0;

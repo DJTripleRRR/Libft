@@ -6,7 +6,7 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/12 14:42:43 by rysmith           #+#    #+#             */
-/*   Updated: 2019/07/15 14:37:36 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/08/19 15:54:07 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n)
 			n--;
 		}
 		else
-			break;
+			break ;
 	}
 	s1[i] = '\0';
 	return (s1);

@@ -6,7 +6,7 @@
 /*   By: rysmith <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 17:32:25 by rysmith           #+#    #+#             */
-/*   Updated: 2019/05/29 17:42:51 by rysmith          ###   ########.fr       */
+/*   Updated: 2019/08/19 15:52:59 by rysmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t			i;
+	size_t				i;
 	const unsigned char	*fs1;
 	const unsigned char	*fs2;
 
